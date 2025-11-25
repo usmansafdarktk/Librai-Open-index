@@ -69,7 +69,7 @@ export default function About() {
           >
             <div className="mb-6 transition-transform group-hover:scale-110 duration-300">
               <Image 
-                src="/icon-1.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon-1.png`} 
                 alt="Structured Metadata Icon" 
                 width={172} 
                 height={172}
@@ -87,7 +87,7 @@ export default function About() {
           >
             <div className="mb-6 transition-transform group-hover:scale-110 duration-300">
               <Image 
-                src="/icon-2.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon-2.png`}
                 alt="Adversarial Focus Icon" 
                 width={172} 
                 height={172} 
@@ -105,7 +105,7 @@ export default function About() {
           >
             <div className="mb-6 transition-transform group-hover:scale-110 duration-300">
               <Image 
-                src="/icon-3.png" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon-3.png`} 
                 alt="Living Registry Icon" 
                 width={172} 
                 height={172} 
@@ -120,3 +120,4 @@ export default function About() {
     </section>
   );
 }
+
