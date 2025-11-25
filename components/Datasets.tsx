@@ -31,7 +31,7 @@ export default function Datasets() {
   useEffect(() => {
     const fetchDatasets = async () => {
       try {
-        const response = await fetch('/datasets.csv');
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/datasets.csv`);
         const csvText = await response.text();
 
         Papa.parse(csvText, {
@@ -203,3 +203,4 @@ export default function Datasets() {
     </section>
   );
 }
+
