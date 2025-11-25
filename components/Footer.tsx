@@ -8,7 +8,7 @@ export default function Footer() {
         {/* LEFT: Branding */}
         <div className="flex items-center gap-3">
           <Image 
-            src="/librai-icon-light.png" 
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/librai-icon-light.png`}
             alt="LibrAI Logo" 
             width={100} 
             height={100} 
@@ -32,3 +32,4 @@ export default function Footer() {
     </footer>
   );
 }
+
