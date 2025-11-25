@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LibrAI Open Index for AI Safety
 
-## Getting Started
+A living catalogue of public datasets designed to evaluate, red-team, and improve the safety of Large Language Models.
 
-First, run the development server:
+**[Visit Live Site](https://usmansafdarktk.github.io/Librai-Open-index/)** | **[LibrAI Website](https://www.librai.tech/)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## About the Project
+
+The **LibrAI Open Index** is a centralized hub for AI safety research, aggregating over **150 public datasets** for Large Language Model (LLM) evaluation. We structure these resources with standardized metadata including:
+
+- **Licensing information** (MIT, Apache 2.0, etc.)
+- **Release year** for temporal context
+- **Task categories** and specific safety vectors
+- **Source provenance** for traceability
+
+Our mission is to streamline red-teaming and alignment research by making high-quality safety datasets easily discoverable and accessible.
+
+## Features
+
+- **Comprehensive Dataset Catalog**: Browse 150+ curated datasets for LLM safety evaluation
+- **Granular Filtering**: Search by license, year, safety vector (PII leakage, toxicity, etc.)
+- **Standardized Metadata**: Consistent formatting across all dataset entries
+- **License-First Design**: Clear licensing information for compliance
+- **Regular Updates**: Living index that grows with the AI safety community
+
+## Dataset Structure
+
+Our `datasets.csv` includes the following fields:
+
+- **Name**: Dataset identifier
+- **Description**: Brief overview of dataset purpose
+- **License**: Distribution license (MIT, Apache 2.0, CC-BY, etc.)
+- **Year**: Release/publication year
+- **Safety Vectors**: Tagged categories (toxicity, bias, PII, hallucination, etc.)
+- **Source**: Original provider or organization
+- **Link**: Direct access URL
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages
+- **CI/CD**: GitHub Actions
+
+## Project Structure
+
+```
+Librai-Open-index/
+├── app/                  # Next.js app directory
+├── components/           # React components
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Datasets.tsx
+│   └── Footer.tsx
+├── public/               # Static assets
+│   ├── datasets.csv      # Main dataset catalog
+│   └── *.png             # Images and icons
+├── next.config.ts        # Next.js configuration
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We welcome contributions to expand and improve the Open Index! Here's how you can help:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Adding New Datasets
 
-## Learn More
+1. Fork the repository
+2. Add dataset information to `public/datasets.csv`
+3. Ensure all required fields are completed
+4. Submit a pull request with a clear description
 
-To learn more about Next.js, take a look at the following resources:
+### Reporting Issues
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Found a broken link or incorrect metadata? Please [open an issue](https://github.com/usmansafdarktk/Librai-Open-index/issues) with details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Code Contributions
 
-## Deploy on Vercel
+1. Fork and clone the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+
+- Built by the [LibrAI](https://www.librai.tech/) team
+- Inspired by the AI safety research community
+
+## Contact
+
+For questions, suggestions, or partnerships:
+
+- **Website**: [librai.tech](https://www.librai.tech/)
+
