@@ -24,13 +24,13 @@ export default function Header() {
       {/* LEFT: Logo Area */}
       <div className="flex items-center">
         <Link 
-          href="/" 
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/`}
           className="flex items-center gap-3 md:gap-4 hover:opacity-80 transition"
           onClick={() => setActiveLink('home')}
         >
           {/* Public Icon - Hidden on smaller screens (< sm) */}
           <Image 
-            src="/librai-icon-dark.png" 
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/librai-icon-dark.png`}
             alt="LibrAI Logo" 
             width={100} 
             height={100} 
@@ -78,4 +78,5 @@ export default function Header() {
 
     </header>
   );
+
 }
